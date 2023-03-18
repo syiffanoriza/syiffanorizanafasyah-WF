@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --brand: #FFCD29;
+    --brand2: #ffcd295a;
+    --white: #F9F9F9;
+    --white2: #F5F5F5;
+    --grey: #F2F2F2;
+    --black: #080808;
+    --shadow: 0 15px 25px 0 #0000000c;
+    --shade: #00000015;
+    --shadowL: -3px 8px 8px 0 #0000000c;
+    --radiusL: 5px 0 0 5px;
+    --shadowR: 3px 8px 8px 0 #0000000c;
+    --radiusR: 0 5px 5px 0;
+    --none: #00000000;
+}
+
+.hl {
+    text-decoration: underline var(--brand);
+}
+
+.fade {
+    color: var(--shade);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4em;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.padding {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.icon {
+    height: 2em;
+}
+
+.btn {
+    padding: 0.3em 1em;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--none);
+    border: 2px solid var(--brand);
+    border-radius: 1.5em;
+    transition: 200ms;
+}
+
+.btn:hover {
+    background-color: var(--brand);
+    color: white;
+    transition: 200ms;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    height: 34em;
+    background-color: var(--white);
+}
+
+
+
+.banner .icon {
+    height: 24em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4em;
+}
+
+footer p {
+    color: #00000080;
+}
+
+.template-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    background-color: var(--white);
+    border-radius: 1em;
+}
+
+.templates {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.template-box {
+    height: 10em; 
+    width: 30em;
+    background-color: var(--shade);
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+    background-color: var(--white);
+    border-radius: 1em;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.btn2 {
+    padding: 0.3em 1em;
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    background-color: var(--none);
+    border: 2px dotted var(--brand);
+    border-radius: 1.5em;
+    transition: 200ms;
+}
+
+.btn2:hover {
+    background-color: var(--brand);
+    color: var(--white);
+    transition: 200ms;
+}
+
+.right {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 2em;
+    background-color: var(--white2);
+    border-top: 0.5em solid var(--brand);
+}
+
+.make-note {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.make-note form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0;
+    outline: none;
+    background-color: var(--none);
+    border: none;
+    border-bottom: 2px solid var(--shade);
+}
+
+.note-area {
+    background-color: var(--none);
+    border: none;
+    outline: none;
+    resize: vertical;
+}
+
+.view-note {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
